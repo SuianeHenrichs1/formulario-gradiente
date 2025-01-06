@@ -1,0 +1,179 @@
+/* Reset básico e configurações globais */
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimento no tamanho total dos elementos */
+    font-family: 'Poppins', sans-serif; /* Define a fonte padrão */
+}
+
+/* Fundo gradiente no body */
+body {
+    width: 100%; /* Largura total da tela */
+    height: 100vh; /* Altura total da tela */
+    display: flex; /* Usa flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-image: linear-gradient(to left, #c555bf, #731b86, #5099bb); /* Fundo gradiente */
+    background-size: 500% 100%; /* Tamanho do fundo para animação */
+    animation: degrade 4s infinite alternate; /* Animação do gradiente */
+    background-position: center; /* Posição inicial do fundo */
+}
+
+/* Keyframes para a animação do gradiente */
+@keyframes degrade {
+    0% {
+        background-position-x: 0%; /* Posição inicial do gradiente */
+    }
+    100% {
+        background-position-x: 100%; /* Posição final do gradiente */
+    }
+}
+
+/* Container principal para organizar o layout */
+.container {
+    width: 90%; /* Largura do container */
+    max-width: 1200px; /* Largura máxima do container */
+    display: flex; /* Usa flexbox para layout */
+    gap: 2rem; /* Espaçamento entre os elementos */
+    background: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 1.5rem; /* Espaçamento interno */
+}
+
+/* Seção de imagem */
+.form-image {
+    flex: 1; /* Ocupa metade do espaço */
+    display: flex; /* Usa flexbox para centralizar a imagem */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #dbe1e43d; /* Fundo semi-transparente */
+    margin-left: 250px; /* Margem à esquerda */
+}
+
+.form-image img {
+    max-width: 100%; /* Largura máxima da imagem */
+    height: 58.1vh; /* Altura*/
+    box-shadow: rgba(0, 0, 0, 0.226) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; /* Sombra da imagem */
+}
+
+/* Seção do formulário */
+.form {
+    flex: 1; /* Ocupa metade do espaço */
+    display: flex; /* Usa flexbox para layout */
+    flex-direction: column; /* Alinha itens em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    gap: 1rem; /* Espaçamento entre os elementos */
+    color: #fff; /* Cor do texto */
+    padding: 1rem; /* Espaçamento interno */
+    background-color: #19062462; /* Fundo semi-transparente */
+    margin-right: 250px; /* Margem à direita */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; /* Sombra do formulário */
+}
+
+/* Cabeçalho do formulário */
+.form-header {
+    display: flex; /* Usa flexbox para layout */
+    justify-content: space-between; /* Espaça os itens */
+    align-items: center; /* Alinha itens verticalmente */
+    margin-bottom: 1rem; /* Espaçamento inferior */
+}
+
+.form-header .title h1 {
+    font-size: 2rem; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto */
+}
+
+.form-header .login-button button {
+    background-color: #794cc2; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 0.5rem 2rem; /* Espaçamento interno */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background-color 0.3s; /* Transição suave para mudança de cor */
+}
+
+.form-header .login-button button:hover {
+    background-color: #731b86; /* Cor de fundo ao passar o mouse */
+}
+
+/* Inputs do formulário */
+.input-group {
+    display: flex; /* Usa flexbox para layout */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    gap: 1rem; /* Espaçamento entre os elementos */
+}
+
+.input-box {
+    flex: 1 1 calc(50% - 1rem); /* Ajusta largura para 50% com espaçamento */
+    display: flex; /* Usa flexbox para layout */
+    flex-direction: column; /* Alinha itens em coluna */
+}
+
+.input-box label {
+    margin-bottom: 0.5rem; /* Espaçamento inferior */
+    color: #fff; /* Cor do texto */
+    font-size: 1.0rem; /* Tamanho da fonte */
+}
+
+.input-box input {
+    padding: 0.9rem; /* Espaçamento interno */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
+    color: #f8f8f8; /* Cor do texto */
+    outline: none; /* Remove contorno */
+}
+
+/* Gênero */
+.gender-input {
+    margin-bottom: 1rem; /* Espaçamento inferior */
+}
+
+.gender-title h3 {
+    margin: 2rem 0 0.5rem 0; /* Espaçamento superior e inferior */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto */
+}
+
+.gender-group {
+    display: flex; /* Usa flexbox para layout */
+    gap: 1rem; /* Espaçamento entre os elementos */
+    color: #fff; /* Cor do texto */
+    font-size: 1.0rem; /* Tamanho da fonte */
+}
+
+.gender-input input {
+    margin-right: 0.5rem; /* Espaçamento à direita */
+}
+
+.input-box input::placeholder {
+    color: #dfd8d8; /* Cor do placeholder */
+    opacity: 1; /* Opacidade do placeholder */
+    font-size: 0.8rem; /* Tamanho da fonte do placeholder */
+}
+
+/* Botão de continuar */
+.continue-button {
+    display: flex; /* Habilita o flexbox no contêiner */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente, se necessário */
+}
+
+.continue-button button {
+    background-color: #794cc2; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 0.75rem 1.5rem; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background-color 0.3s; /* Transição suave para mudança de cor */
+    width: 100%; /* Largura do botão ocupa 100% do contêiner */
+}
+
+.continue-button button:hover {
+    background-color: #5099bb; /* Cor de fundo ao passar o mouse */
+}
+
+
