@@ -50,3 +50,8 @@ O layout foi desenvolvido de maneira responsiva para garantir uma ótima experi�
 
    ```bash
    git clone https://github.com/SuianeHenrichs1/formulario-gradiente.git
+
+# ✨ Autora
+
+| [<img loading="lazy" src="https://github.com/SuianeHenrichs1.png" width=115><br><sub>Suiane Henrichs</sub>](https://github.com/SuianeHenrichs1) |
+| :---: |
